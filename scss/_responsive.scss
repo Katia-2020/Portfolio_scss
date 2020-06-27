@@ -1,0 +1,53 @@
+@include media-md {
+    
+    .nav {
+        top: 1rem;
+    }
+
+    .menu-btn {
+    visibility: hidden;
+    }
+
+    .jobs {
+    width: 60vw
+    }
+
+    .projects {
+        &__items {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1.5rem;
+        width: 75vw
+        }
+
+        &__btn {
+            font-size: 1.5rem;
+        }
+    }
+ 
+    .about__bio {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@include media-lg {
+    .jobs {
+        width: 50vw
+        }
+
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-xl {
+    .projects {
+        &__bio-image {
+        height: 50vh;
+        }
+        &__items {
+        grid-template-columns: repeat(3, 1fr);
+        }
+    }    
+}

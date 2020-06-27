@@ -1,0 +1,55 @@
+$primary-clr: rgb(19, 122, 110);
+$secondary-clr: rgb(195, 243, 23);
+$text-clr: rgb(228, 228, 255); 
+
+
+$font-weights: (
+    "regular": 300,
+    "medium": 400,
+    "bold": 600,
+    "bolder": 800
+);
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+@mixin transition-ease {
+    transition: all 0.25s ease-in-out;
+}
+
+@mixin un-list {
+    display: flex;
+    list-style-type: none;
+    }
+
+@function set-text-color($clr) {
+    @if (lightness($clr)>40%) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+
+@mixin media-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px){
+        @content;
+        }
+}

@@ -1,0 +1,43 @@
+.contact {
+    height: 100%;
+    padding-top: 25vh;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: 
+    linear-gradient(
+        to left,
+        rgba($secondary-clr, 0.5), 
+        rgba($primary-clr, 0.9),
+        rgba($primary-clr, 0.8),
+        rgba($secondary-clr, 0.6)           
+    ),
+        url(https://picsum.photos/900/400) center;
+    background-size: cover;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+        margin: 0 4rem;
+        }
+    
+    .fas {
+        margin-right: 1rem;
+        color:$secondary-clr;
+    }
+
+
+    .social-icons {
+        position: initial;
+        margin-top: 2rem;
+    }
+}
